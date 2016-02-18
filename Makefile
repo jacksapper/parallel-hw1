@@ -23,7 +23,7 @@ benchmark-blocked : benchmark.o dgemm-blocked.o
 benchmark-blas : benchmark.o dgemm-blas.o
 	$(CC) -o $@ $^ $(LDLIBS)
 benchmark-eigen : benchmark.o dgemm-eigen.o
-	$(CC) -o $@ $^ $(LDLIBS) -I -I "~/parallel-hw1/Eigen"
+	$(CC) -o $@ $^ $(LDLIBS) -I "~/parallel-hw1/Eigen"
 
 %.o : %.c
 	$(CC) -c $(CFLAGS) $<
