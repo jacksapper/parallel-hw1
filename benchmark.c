@@ -31,8 +31,8 @@ void reference_dgemm (int N, double ALPHA, double* A, double* B, double* C)
 }   
 
 /* Your function must have the following signature: */
-extern "C" const char* dgemm_desc;
-extern "C" void square_dgemm (int, double*, double*, double*);
+extern const char* dgemm_desc;
+extern void square_dgemm (int, double*, double*, double*);
 
 double wall_time ()
 {

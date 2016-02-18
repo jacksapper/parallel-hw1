@@ -6,6 +6,8 @@ using namespace std;
 
 const char* dgemm_desc = "Breaking da rules, Breaking da rules";
 
+extern "C" void square_dgemm (int n, double* A, double* B, double* C);
+
 void square_dgemm (int n, double* A, double* B, double* C)
 {
 	MatrixXd Ayy = Map<MatrixXd>(A,n,n);
